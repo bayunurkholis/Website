@@ -1,5 +1,5 @@
 <style type="text/css">
-    .login {
+     .form {
         margin: 100px auto;
         width: 350px;
         padding: 10px;
@@ -23,43 +23,44 @@
         text-align: center;
       }
 </style>
-<div class="login">
-<form>
-	<fieldset>
-		<h2>Masukan Data</h2>
-	 	 <tr>      
-         	<th><label>Nama :</label></th>
-            <td><input type="text" id ="Nama"  placeholder="Masukan Nama" autofocus></td>
-         </tr>
-         <tr>
-            <th><label>Alamat :</label></th>
-            <td><input type="text" id="Alamat" placeholder="Masukan Alamat" ></td>
-         </tr>      
-         <tr>
-            <th><label>Agama :</label></th>
-            <td><input type="text" id="Agama" placeholder="Masukan Agama" ></td>
-         </tr>           
-	        <input type="button" id="submit" value="Simpan">
-	</fieldset> 
-     <br>
- </form>
-</div>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input Data</title>
+</head>
+<body>
+  <div class="form">
+    <fieldset>
+     <h2>Masukan Data</h2>
+            <label>Nama :</label>
+            <input type="text" id ="Nama"  placeholder="Masukan Nama" autofocus>
+        
+            <label>Alamat :</label>
+            <input type="text" id="Alamat" placeholder="Masukan Alamat" >
+       
+            <label>Agama :</label>
+            <input type="text" id="Agama" placeholder="Masukan Agama" >
+               
+          <input type="button" id="submit" value="Simpan">
+  </fieldset> 
+  </div>
+</body>
+</html>
 
 <script type="text/javascript">
-	document.getElementById("submit").
+    document.getElementById("submit").
     addEventListener("click",tampilkan_data_form);
 
     function tampilkan_data_form()
     {
-    	var nama= document.getElementById("Nama").value;
-    	var alamat = document.getElementById("Alamat").value;
-    	var agama = document.getElementById("Agama").value;
+      var nama= document.getElementById("Nama").value;
+      var alamat = document.getElementById("Alamat").value;
+      var agama = document.getElementById("Agama").value;
 
-    	alert( 
-    		   "Nama : "+ nama +
-    		   "\n Alamat  :"+ alamat +
-    		   "\n Agama : " + agama
-    		  );
+      alert( 
+           "Nama : "+ nama +
+           "\n Alamat  :"+ alamat +
+           "\n Agama : " + agama
+          );
     }
 </script>
